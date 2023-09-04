@@ -1,30 +1,36 @@
-# pipeline_template
+# project_template
 A template repository for pipeline code. For an example, see https://github.com/IGVF-UCSD/celloracle_pipeline/tree/dev. This should include:
 
-# `README.md` (this file)
-- With details on the method
+# `README.md`
+- with details of the project
+- mention where you can find pipelines and datasets
 
-# `bin`
+# `dataset_1`
 
-- Compiled code that runs different iterations of each pipeline
+- `README.md` with brief details on dataset and pointer to how it was processed
 
-## `pipeline_1`
+## `bin`
 
-- Maybe this is the simple one sample one run pipeline
+- Compiled code (scripts and notebooks) for downstream analysis relevant to this project
+- Will usually be some combination of bash scripts for running pipelines and notebooks for visualizing results
 
-## `pipeline_2`
+## `figures`
 
-- Maybe this is a SLURM pipeline
+- Figures generated from notebooks
 
-## `...`
+## `results`
 
-# `data`
+- Outputs from running pipelines
 
-- Any auxiliary data needed for running methods
-    - If it’s small, put it in the repo
-    - If it’s large, link to it a file
+# `dataset_2`
 
-# `env`
+- …
 
-- .def file for singularity set-up so you can run (recommended for reproducbility)
-- .yaml file for conda set-up so you can run (recommended for modifcation)
+# `doc`
+
+- Any text or links to spreadsheet, docs etc.
+
+# `auxiliary_data`
+
+- Links or data that is used for analysis but not explicitly generated here
+- 
